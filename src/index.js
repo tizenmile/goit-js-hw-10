@@ -20,7 +20,7 @@ function inputCountry() {
   getCountry(this.value.trim())
     .then(pushCountry => {
       refs.contryList.innerHTML = inner;
-      if (pushCountry.length > 2 && pushCountry.length <= 10) {
+      if (pushCountry.length >= 2 && pushCountry.length <= 10) {
         let listOfCountry = pushCountry
           .map(element => {
             inner = `
