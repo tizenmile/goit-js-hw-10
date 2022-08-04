@@ -34,7 +34,7 @@ function inputCountry() {
         refs.contryList.innerHTML = listOfCountry;
         refs.countryInfo.innerHTML = '';
       }
-      if (pushCountry.length === 1) {
+      else if (pushCountry.length === 1) {
         const count = pushCountry.map(element => {
           const lang = Object.values(element.languages);
           inner = `
